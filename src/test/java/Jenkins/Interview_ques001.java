@@ -51,7 +51,7 @@ public class Interview_ques001 {
 		
 		//Payment Details
 		
-		driver.findElement(By.id("name")).sendKeys("Eva Adams");
+		driver.findElement(By.id("name")).sendKeys("Mia");
 		driver.findElement(By.id("country")).sendKeys("France");
 		driver.findElement(By.id("city")).sendKeys("Paris");
 		driver.findElement(By.id("card")).sendKeys("987456123987");
