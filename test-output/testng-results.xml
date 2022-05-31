@@ -1,47 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Hello C#]]>
-    </line>
-    <line>
-      <![CDATA[Hello Python]]>
-    </line>
-    <line>
-      <![CDATA[Hello Java]]>
+      <![CDATA[ruby]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-05-30T10:55:26 IST" name="Suite" finished-at="2022-05-30T10:55:26 IST" duration-ms="49">
+  <suite started-at="2022-05-31T09:04:33 IST" name="Default suite" finished-at="2022-05-31T09:04:33 IST" duration-ms="40">
     <groups>
     </groups>
-    <test started-at="2022-05-30T10:55:26 IST" name="Test" finished-at="2022-05-30T10:55:26 IST" duration-ms="49">
-      <class name="Jenkins.test3">
-        <test-method signature="Csharp()[pri:0, instance:Jenkins.test3@63021689]" started-at="2022-05-30T10:55:26 IST" name="Csharp" finished-at="2022-05-30T10:55:26 IST" duration-ms="7" status="PASS">
+    <test started-at="2022-05-31T09:04:33 IST" name="Default test" finished-at="2022-05-31T09:04:33 IST" duration-ms="40">
+      <class name="Jenkins.test4">
+        <test-method signature="test5()[pri:0, instance:Jenkins.test4@3c130745]" started-at="2022-05-31T09:04:33 IST" name="test5" finished-at="2022-05-31T09:04:33 IST" duration-ms="11" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Hello C#]]>
+              <![CDATA[ruby]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Csharp -->
-      </class> <!-- Jenkins.test3 -->
-      <class name="Jenkins.test2">
-        <test-method signature="Python()[pri:0, instance:Jenkins.test2@64cd705f]" started-at="2022-05-30T10:55:26 IST" name="Python" finished-at="2022-05-30T10:55:26 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Hello Python]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Python -->
-      </class> <!-- Jenkins.test2 -->
-      <class name="Jenkins.test1">
-        <test-method signature="java()[pri:0, instance:Jenkins.test1@9225652]" started-at="2022-05-30T10:55:26 IST" name="java" finished-at="2022-05-30T10:55:26 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Hello Java]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- java -->
-      </class> <!-- Jenkins.test1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test5 -->
+      </class> <!-- Jenkins.test4 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
