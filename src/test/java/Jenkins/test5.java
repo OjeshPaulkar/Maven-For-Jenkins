@@ -7,7 +7,7 @@ public class test5 {
 	
 	@Test
 	public void Csharp() {
-		Reporter.log("Hello German", true);
+		Reporter.log("Hello French", true);
 	}
 
 
