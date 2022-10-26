@@ -101,7 +101,14 @@ public class FlexiBusHomePage {
 	public FlexiBusHomePage selectDepartureDate(String month, String year, String date)
 	{
 		clickDepartureDate.click();
+		try
+		{
 		driver.findElement(By.xpath("//label[text()='Departure']/ancestor::div[@class='jNQ9k']/descendant::h3[text()='" + month + " " +  year + "']/parent::caption/following-sibling::tbody/descendant::span[text()='" + date + "']")).click();
+		}
+		catch (Exception e) {
+			driver.findElement(By.xpath("//*[name()='svg' and @class='hcr-svg-arrow-right']")).click();
+			selectDepartureDate(month,year,date);
+		}
 		return this;
 	}
 	
@@ -113,7 +120,14 @@ public class FlexiBusHomePage {
 	public FlexiBusHomePage selectReturnDate(String month, String year, String date)
 	{
 		clickReturnDate.click();
+		try
+		{
 		driver.findElement(By.xpath("//label[text()='Return']/ancestor::div[@class='jNQ9k']/descendant::h3[text()='" + month + " " +  year + "']/parent::caption/following-sibling::tbody/descendant::span[text()='" + date + "']")).click();
+		} 
+		catch (Exception e) {
+			driver.findElement(By.xpath("//*[name()='svg' and @class='hcr-svg-arrow-right']")).click();
+			selectReturnDate(month,year,date);
+		}
 		return this;
 	}
 	

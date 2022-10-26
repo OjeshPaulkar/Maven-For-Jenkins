@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-26T10:34:51 IST" name="Default suite" finished-at="2022-10-26T10:35:18 IST" duration-ms="27364">
+  <suite started-at="2022-10-26T23:25:23 IST" name="Default suite" finished-at="2022-10-26T23:26:15 IST" duration-ms="51614">
     <groups>
     </groups>
-    <test started-at="2022-10-26T10:34:51 IST" name="Default test" finished-at="2022-10-26T10:35:18 IST" duration-ms="27364">
+    <test started-at="2022-10-26T23:25:23 IST" name="Default test" finished-at="2022-10-26T23:26:15 IST" duration-ms="51614">
       <class name="flexiBus.FlexiNBusBookin_Test">
-        <test-method signature="bookTicketsForOneWayTrip()[pri:0, instance:flexiBus.FlexiNBusBookin_Test@6e4784bc]" started-at="2022-10-26T10:34:51 IST" name="bookTicketsForOneWayTrip" finished-at="2022-10-26T10:35:04 IST" duration-ms="13290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookTicketsForOneWayTrip -->
-        <test-method signature="bookTicketsForTwoWayTrip()[pri:0, instance:flexiBus.FlexiNBusBookin_Test@6e4784bc]" started-at="2022-10-26T10:35:04 IST" name="bookTicketsForTwoWayTrip" finished-at="2022-10-26T10:35:18 IST" duration-ms="14031" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method signature="bookTicketsForTwoWayTrip()[pri:0, instance:flexiBus.FlexiNBusBookin_Test@2b9b7f1f]" started-at="2022-10-26T23:25:23 IST" name="bookTicketsForTwoWayTrip" finished-at="2022-10-26T23:26:14 IST" duration-ms="51225" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EUI8GBJ', ip: '192.168.139.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+System info: host: 'DESKTOP-EUI8GBJ', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\OJESH\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a8ab8e73a7947e753a4db15829d048cd
-*** Element info: {Using=id, value=search-mask-trip-mode-roundtrip-toggle}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\OJESH\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64624}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 768942608867b74f0186a53cd2e57fac]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EUI8GBJ', ip: '192.168.139.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+System info: host: 'DESKTOP-EUI8GBJ', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\OJESH\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a8ab8e73a7947e753a4db15829d048cd
-*** Element info: {Using=id, value=search-mask-trip-mode-roundtrip-toggle}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\OJESH\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64624}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 768942608867b74f0186a53cd2e57fac
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -45,15 +39,17 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
-at flexiBus.FlexiBusHomePage.selectRoundTripCheckBox(FlexiBusHomePage.java:67)
-at flexiBus.FlexiNBusBookin_Test.bookTicketsForTwoWayTrip(FlexiNBusBookin_Test.java:80)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at flexiBus.FlexiBusHomePage.selectDestinationCity(FlexiBusHomePage.java:91)
+at flexiBus.FlexiBusHomePage.bookTickets(FlexiBusHomePage.java:174)
+at flexiBus.FlexiNBusBookin_Test.startTwoWayBookingTickets(FlexiNBusBookin_Test.java:108)
+at flexiBus.FlexiNBusBookin_Test.bookTicketsForTwoWayTrip(FlexiNBusBookin_Test.java:75)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,7 +80,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookTicketsForTwoWayTrip -->

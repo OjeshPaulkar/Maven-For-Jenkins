@@ -1,8 +1,11 @@
 package genericUtilities;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -26,7 +29,7 @@ public class ExcelFile_Utilities {
 		
 
 		public String getExcelData(String sheetName , int rowNum , int celNum) throws Throwable  {
-			FileInputStream fis = new FileInputStream("./TestData/HouseRentalTestData(Sprint-2).xlsx");
+			FileInputStream fis = new FileInputStream("./TestData/Book1.xlsx");
 			Workbook wb = WorkbookFactory.create(fis);
 			Sheet sh = wb.getSheet(sheetName);
 			Row row = sh.getRow(rowNum);
@@ -44,12 +47,36 @@ public class ExcelFile_Utilities {
 		 * @throws Throwable
 		 */
 		public int getRowCount(String sheetName) throws Throwable {
-			FileInputStream fis  = new FileInputStream(IConstants.EXCELPATH);
+			FileInputStream fis  = new FileInputStream("./TestData/Book1.xlsx");
 			Workbook wb = WorkbookFactory.create(fis);
 			Sheet sh = wb.getSheet(sheetName);
-			wb.close();
+			//wb.close();
 			return sh.getLastRowNum();
 		}
+		
+		
+		public String[] getAllCellDataOfOneRow(String sheetName, int rowNumber ) throws EncryptedDocumentException, IOException
+		
+		{
+			FileInputStream fis=new FileInputStream("./TestData/Book1.xlsx");
+			Workbook wb = WorkbookFactory.create(fis);
+			String[] data=new String[getExcelCells(sheetName,rowNumber)];
+				for(int j=0;j<getExcelCells(sheetName,rowNumber);j++)
+				{
+					data[j] = wb.getSheet("Sheet1").getRow(rowNumber).getCell(j).getStringCellValue();
+				}
+			return data;
+		}
+		
+		
+		private int getExcelCells(String sheetName, int rowNumber) throws EncryptedDocumentException, IOException 
+		  {
+		
+			FileInputStream fis=new FileInputStream("./TestData/Book1.xlsx");
+			Workbook wb = WorkbookFactory.create(fis);
+			short lastCellNum = wb.getSheet(sheetName).getRow(rowNumber).getLastCellNum();
+			return lastCellNum;
+		  }
 		
 		
 		
@@ -61,7 +88,8 @@ public class ExcelFile_Utilities {
 		 * @param data
 		 * @throws Throwable
 		 */
-		public void setDataExcel(String sheetName , int rowNum, int celNum ,String data) throws Throwable {
+		public void setDataExcel(String sheetName , int rowNum, int celNum ,String data) throws Throwable 
+		{
 			FileInputStream fis  = new FileInputStream(IConstants.EXCELPATH);
 			Workbook wb = WorkbookFactory.create(fis);
 			Sheet sh = wb.getSheet(sheetName);
