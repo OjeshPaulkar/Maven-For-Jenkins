@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Scripts.Login">
+      <class name="flexiBus.FlexiNBusBookin_Test">
         <methods>
-          <include name="testLogin"/>
-          <include name="openApp"/>
-          <include name="closeA"/>
+          <include name="bookTicketsForTwoWayTrip"/>
         </methods>
-      </class> <!-- Test_Scripts.Login -->
+      </class> <!-- flexiBus.FlexiNBusBookin_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
